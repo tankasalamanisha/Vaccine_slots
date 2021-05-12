@@ -27,7 +27,7 @@ try:
         mysession = mydict.get("sessions")
         print(mydict.get("name"))
         for i in mysession:
-            if i.get("available_capacity")>=0 and i.get("min_age_limit")==int(myage):
+            if i.get("available_capacity")>0 and i.get("min_age_limit")==int(myage):
                 print("{0:10}{1:20}".format(str(i.get("available_capacity")),str(i.get("slots"))))
             else:
                 print("No slots available")
